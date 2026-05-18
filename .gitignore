@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Data and outputs
+/data/
+/out/
+logs/
+*.npy
+*.npz
+*.jsonl
+*.jsonl.gz
+*.json
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.xdv
+paper/main.pdf
+
+# Secrets
+.env
+
+# Local notes
+*.md
+!README.md
+!**/README.md
+.claude/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
