@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Data and outputs
+/data/
+/out/
+logs/
+*.npy
+*.npz
+*.pkl
+*.pt
+*.jsonl
+*.jsonl.gz
+*.json
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.xdv
+paper/main.pdf
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Local tools
+.claude/
+.codex/
+.pytest_cache/
+.ruff_cache/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp

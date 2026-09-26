@@ -1,0 +1,34 @@
+# Data filtering configuration.
+# Used by: reasonops.data.filter (loads dropped_models, excluded_datasets).
+
+[corpus]
+k_operators = 7
+seed        = 42
+
+# Models included in the final corpus.
+active_models = [
+    "qwq-32b",
+    "qwen3-30b-thinking",
+    "qwen3-235b-thinking",
+    "r1-distill-qwen-32b",
+    "r1-distill-llama-70b",
+    "r1-0528",
+    "claude-haiku",
+    "claude-sonnet",
+    "grok-3-mini",
+    "nemotron-49b",
+    "kimi-k2",
+    "kimi-k2.5",
+]
+
+# Dropped: provider does not expose raw chain-of-thought tokens via API.
+dropped_models = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemma-4-31b",
+                  "gpt-5-mini", "gpt-5.4-mini", "gpt-oss-120b",
+                  "grok-4.1-fast", "nemotron-120b"]
+
+# Datasets used in correctness prediction.
+active_datasets = ["math", "gpqa", "aime", "livecodebench", "mmlu_pro", "arc_challenge"]
+
+# Excluded from correctness prediction
+# (BBH and HumanEval are answer-matched / execution-graded; ARC-AGI-2 is held out).
+excluded_datasets = ["bbh", "humaneval", "arc_agi2"]
